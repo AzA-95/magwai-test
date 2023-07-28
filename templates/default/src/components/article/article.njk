@@ -1,0 +1,23 @@
+{% macro article(args) %}
+	<article class="article">
+		<div class="article__pic">
+			<a href="#">
+				<picture>
+					<source data-srcset="images/{{ args.picWebp }}, images/{{ args.picWebp@2x }} 2x" type="image/webp">
+					<img class="lazyload" data-srcset="images/{{ args.pic }}, images/{{ args.pic@2x }} 2x" data-src="images/{{ args.pic }}" alt="pic">
+				</picture>
+			</a>
+		</div>
+		<div class="article__desc">
+			<div class="article__category" data-mh>{% if args.category %}<a href="#">{{ args.category }}</a>{% endif %}</div>
+			<h3 class="article__name" data-mh>
+				<a href="#">{{ args.name }}</a>
+			</h3>
+			<div class="article__text">{{ args.text }}</div>
+			<div class="article__author">Posted by <span>Eugenia</span>, on July 24, 2019</div>
+			<div class="article__btn">
+				<a href="#">Continue reading</a>
+			</div>
+		</div>
+	</article>
+{% endmacro %}

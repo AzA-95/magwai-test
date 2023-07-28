@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	{% set title = 'Навигация' %}
+	{% include "components/head/head.njk" %}
+
+	<style>
+		body {
+			margin: 0;
+			color: #fff;
+			background: #8d99ae;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 auto;
+			padding: 50px 0;
+			max-width: 1000px;
+		}
+
+		h1 {
+			margin-bottom: 30px;
+		}
+
+		ul {
+			width: 300px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		li {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+
+		a {
+			display: block;
+			color: #2b2d42;
+			padding: 11px 25px;
+			border-radius: 4px;
+			background: #edf2f4;
+			text-decoration: none;
+
+			&:hover {
+				color: #edf2f4;
+				background: #2b2d42;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.wrapper {
+				padding: 20px 0;
+			}
+		}
+	</style>
+<body>
+	<div class="wrapper">
+		<h1>Навигация</h1>
+		<ul>
+			<li><a target="_blank" href="main.html">Главная</a></li>
+		</ul>
+	</div>
+	<!-- /.wrapper -->
+
+	{% include "components/scripts/scripts.njk" %}
+</body>
+</html>

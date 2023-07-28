@@ -1,0 +1,30 @@
+body {
+	color: var(--color-second);
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Montserrat, sans-serif;
+	line-height: 1.5;
+	background: var(--color-fourth);
+
+	&.mobile-menu-opened {
+		overflow: hidden;
+		padding-right: var(--scrollbar-width);
+	}
+}
+
+a {
+	color: var(--color-second);
+}
+
+img {
+	max-width: 100%;
+}
+
+// Тут по хорошему вместо функции px-to-vw лучше использовать плагин postcss который конвертит px в vw (Но руки еще не дошли написать плагин для этого функционала)
+// Есть плагин для конвертации px в vw https://github.com/evrone/postcss-px-to-viewport но он не подходит так как мне нужно заменять px на vw
+// только на больших экранах (парся стили и добавляя переобразованые px в vw в @media min-with(1920px) выражения как пример)
+@include xlMin {
+	body {
+		font-size: px-to-vw(14);
+	}
+}

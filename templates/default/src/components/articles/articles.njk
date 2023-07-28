@@ -1,0 +1,31 @@
+{% from "components/article/article.njk" import article %}
+{% from "components/btn/btn.njk" import btn %}
+
+<section class="articles">
+	<div class="container">
+		<h2 class="articles__title">Карточки</h2>
+		<div class="articles__grid js-articles">
+			{% for item in json.articles %}
+				{{
+					article({
+						pic: item.pic,
+						pic@2x: item.pic@2x,
+						picWebp: item.picWebp,
+						picWebp@2x: item.picWebp@2x,
+						category: item.category,
+						name: item.name,
+						text: item.text
+					})
+				}}
+			{% endfor %}
+		</div>
+		<div class="articles__load-more-btn">
+			{{
+				btn({
+					text: 'Загрузить еще',
+					dopClass: 'js-load-more-articles-btn'
+				})
+			}}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,92 @@
+.header {
+	padding: 28px 0;
+
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu-btn {
+		display: none;
+	}
+
+	&__menu {
+		margin-left: 76px;
+	}
+
+	&__phone-btn {
+		width: 92px;
+		margin-left: auto;
+	}
+
+	&__call-me {
+		width: 293px;
+		margin-left: 12px;
+	}
+
+	@include xlMin {
+		padding: px-to-vw(28) 0;
+
+		&__menu {
+			margin-left: px-to-vw(76);
+		}
+
+		&__phone-btn {
+			width: px-to-vw(92);
+		}
+
+		&__call-me {
+			width: px-to-vw(293);
+			margin-left: px-to-vw(12);
+		}
+	}
+
+	@include lg {
+		&__menu {
+			margin-left: 45px;
+		}
+
+		&__call-me {
+			width: 250px;
+		}
+	}
+
+	@include mdMax {
+		position: relative;
+		padding: 30px 0 20px;
+
+		&__menu-btn {
+			display: block;
+		}
+
+		&__menu {
+			display: none;
+		}
+
+		&__logo {
+			margin: auto;
+		}
+
+		&__phone-btn {
+			margin: 0;
+		}
+
+		&__call-me {
+			width: 215px;
+			margin-left: -12px; // Тут кнопка прилеплена по дизайну по этому минусуем
+		}
+	}
+
+	@include sm {
+		padding: 15px 0 18px;
+
+		&__logo {
+			margin: 0 0 0 auto;
+		}
+
+		&__phone-btn,
+		&__call-me {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{% macro btn(args) %}
+	<button class="btn {% if args.dopClass %}{{ args.dopClass }}{% endif %}" {% if args.hasPopup %}data-ajax data-url="ajax/popup/call-me.html"{% endif %}>
+		<span>{{ args.text }}</span>
+	</button>
+{% endmacro %}

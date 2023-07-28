@@ -1,0 +1,28 @@
+{% from "components/btn/btn.njk" import btn %}
+
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="header__menu-btn">
+				{% include "components/hamburger/hamburger.njk" %}
+			</div>
+			<div class="header__logo">
+				{% include "components/logo/logo.njk" %}
+			</div>
+			<div class="header__menu">
+				{% include "components/menu/menu.njk" %}
+			</div>
+			<div class="header__phone-btn">
+				{% include "components/phone-btn/phone-btn.njk" %}
+			</div>
+			<div class="header__call-me">
+				{{
+					btn({
+						text: 'Оставить заявку',
+						hasPopup: true
+					})
+				}}
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,21 @@
+$colors: (
+	'color-first': #171717,
+	'color-second': #fff,
+	'color-third': #c2ab81,
+	'color-fourth': #131313,
+	'color-fifth': #666,
+	'color-sixth': #808080,
+);
+
+@function hexToRGB($hex) {
+	@return red($hex), green($hex), blue($hex);
+}
+
+:root {
+	@if $colors {
+		@each $key, $value in $colors {
+			--#{$key}: #{$value};
+			--#{$key}--rgb: #{hexToRGB($value)};
+		}
+	}
+}

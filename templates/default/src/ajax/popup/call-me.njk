@@ -1,0 +1,32 @@
+<div class="popup-block">
+	<div class="popup-block__title">Оставить заявку</div>
+	<form action="#" novalidate class="popup-block__form js-validate-form">
+		<div class="popup-block__field">
+			<label for="name" class="popup-block__label required">Имя</label>
+			<div class="popup-block__input">
+				<input type="text" class="input" placeholder="Имя" required>
+			</div>
+		</div>
+		<div class="popup-block__field">
+			<label for="name" class="popup-block__label required">Номер телефона</label>
+			<div class="popup-block__input">
+				<input type="tel" class="input js-phone-mask" placeholder="Номер телефона" required>
+			</div>
+		</div>
+		<div class="popup-block__field">
+			<label for="name" class="popup-block__label required">E-mail</label>
+			<div class="popup-block__input">
+				<input type="email" class="input" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			</div>
+		</div>
+		<div class="popup-block__field">
+			<label for="name" class="popup-block__label">Доп инофрмация</label>
+			<div class="popup-block__input">
+				<textarea class="textarea" placeholder="Доп инофрмация"></textarea>
+			</div>
+		</div>
+		<div class="popup-block__btn">
+			<button type="submit">Отправить</button>
+		</div>
+	</form>
+</div>

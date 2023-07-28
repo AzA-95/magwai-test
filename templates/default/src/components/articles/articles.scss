@@ -1,0 +1,74 @@
+.articles {
+	padding: 134px 0;
+	overflow: hidden;
+
+	&__title {
+		font-size: 42px;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: 0 0 53px;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 30px;
+	}
+
+	&__load-more-btn {
+		width: 294px;
+		margin: 60px auto 0;
+	}
+
+	@include xlMin {
+		padding: px-to-vw(134) 0;
+
+		&__title {
+			font-size: px-to-vw(42);
+			margin: 0 0 px-to-vw(53);
+		}
+
+		&__grid {
+			grid-template-columns: repeat(auto-fill, minmax(calc(#{px-to-vw(320)} - var(--scrollbar-width)), 1fr));
+			gap: px-to-vw(30);
+		}
+
+		&__load-more-btn {
+			width: px-to-vw(293);
+			margin: px-to-vw(60) auto 0;
+		}
+	}
+
+	@include lg {
+		padding: 80px 0;
+	}
+
+	@include md {
+		padding: 44px 0;
+
+		&__title {
+			margin: 0 0 43px;
+		}
+
+		&__grid {
+			gap: 20px;
+		}
+	}
+
+	@include sm {
+		padding: 48px 0;
+
+		&__title {
+			font-size: 20px;
+			margin: 0 0 30px;
+		}
+
+		&__grid {
+			gap: 20px;
+		}
+
+		&__load-more-btn {
+			margin-top: 38px;
+		}
+	}
+}

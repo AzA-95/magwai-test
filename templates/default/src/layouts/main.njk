@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include "components/head/head.njk" %}
+    </head>
+    <body>
+        {% include "components/header/header.njk" %}
+        {% include "components/mobile-menu/mobile-menu.njk" %}
+
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include "components/footer/footer.njk" %}
+
+        {% include "components/scripts/scripts.njk" %}
+    </body>
+</html>

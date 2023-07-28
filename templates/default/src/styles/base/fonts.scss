@@ -1,0 +1,81 @@
+// **************************
+// *** Montserrat ***
+// **************************
+$montserratPath: './fonts/Montserrat/';
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('#{$montserratPath}Montserrat-Regular.woff2') format('woff2'),
+		url('#{$montserratPath}Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('#{$montserratPath}Montserrat-Medium.woff2') format('woff2'),
+		url('#{$montserratPath}Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('#{$montserratPath}Montserrat-SemiBold.woff2') format('woff2'),
+		url('#{$montserratPath}Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'), url('#{$montserratPath}Montserrat-Bold.woff2') format('woff2'),
+		url('#{$montserratPath}Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+// **************************
+// *** Mulish ***
+// **************************
+$mulishPath: './fonts/Mulish/';
+
+@font-face {
+	font-family: 'Mulish';
+	src: local('Mulish'), url('#{$mulishPath}Mulish-Regular.woff2') format('woff2'),
+		url('#{$mulishPath}Mulish-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mulish';
+	src: local('Mulish'), url('#{$mulishPath}Mulish-Medium.woff2') format('woff2'),
+		url('#{$mulishPath}Mulish-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mulish';
+	src: local('Mulish'), url('#{$mulishPath}Mulish-SemiBold.woff2') format('woff2'),
+		url('#{$mulishPath}Mulish-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Mulish';
+	src: local('Mulish'), url('#{$mulishPath}Mulish-Bold.woff2') format('woff2'),
+		url('#{$mulishPath}Mulish-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

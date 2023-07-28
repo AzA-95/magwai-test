@@ -1,0 +1,119 @@
+{
+	"json": {
+		"articles": [
+			{
+				"pic": "articles/1.jpg",
+				"pic@2x": "articles/1@2x.jpg",
+				"picWebp": "articles/1.webp",
+				"picWebp@2x": "articles/1@2x.webp",
+				"category": "bridge",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/2.jpg",
+				"pic@2x": "articles/2@2x.jpg",
+				"picWebp": "articles/2.webp",
+				"picWebp@2x": "articles/2@2x.webp",
+				"category": "Water",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/3.jpg",
+				"pic@2x": "articles/3@2x.jpg",
+				"picWebp": "articles/3.webp",
+				"picWebp@2x": "articles/3@2x.webp",
+				"category": "bridge",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/4.jpg",
+				"pic@2x": "articles/4@2x.jpg",
+				"picWebp": "articles/4.webp",
+				"picWebp@2x": "articles/4@2x.webp",
+				"category": "bridge",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/5.jpg",
+				"pic@2x": "articles/5@2x.jpg",
+				"picWebp": "articles/5.webp",
+				"picWebp@2x": "articles/5@2x.webp",
+				"category": "bridge",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/6.jpg",
+				"pic@2x": "articles/6@2x.jpg",
+				"picWebp": "articles/6.webp",
+				"picWebp@2x": "articles/6@2x.webp",
+				"category": "forest",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/7.jpg",
+				"pic@2x": "articles/7@2x.jpg",
+				"picWebp": "articles/7.webp",
+				"picWebp@2x": "articles/7@2x.webp",
+				"category": "",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/8.jpg",
+				"pic@2x": "articles/8@2x.jpg",
+				"picWebp": "articles/8.webp",
+				"picWebp@2x": "articles/8@2x.webp",
+				"category": "nature",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/9.jpg",
+				"pic@2x": "articles/9@2x.jpg",
+				"picWebp": "articles/9.webp",
+				"picWebp@2x": "articles/9@2x.webp",
+				"category": "nature",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo"
+			},
+			{
+				"pic": "articles/10.jpg",
+				"pic@2x": "articles/10@2x.jpg",
+				"picWebp": "articles/10.webp",
+				"picWebp@2x": "articles/10@2x.webp",
+				"category": "nature",
+				"name": "How to increase your productivity with a Music",
+				"text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…"
+			}
+		],
+		"menu": [
+			{
+				"name": "Услуги"
+			},
+			{
+				"name": "Абонементы"
+			},
+			{
+				"name": "Почему мы"
+			},
+			{
+				"name": "Оборудование"
+			},
+			{
+				"name": "Акции"
+			},
+			{
+				"name": "Faq"
+			},
+			{
+				"name": "Контакты"
+			}
+		]
+	}
+}

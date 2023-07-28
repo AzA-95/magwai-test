@@ -1,0 +1,87 @@
+.popup-block {
+	width: 480px;
+	padding: 24px;
+	border-radius: 8px;
+	box-shadow: 0px 6px 12px -6px rgba(#09121f, 0.05);
+	background: #fff;
+
+	&__title {
+		color: #000;
+		display: flex;
+		align-items: center;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 500;
+		margin-right: 30px;
+		margin-bottom: 24px;
+	}
+
+	&__field {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__label {
+		color: #2c2d2e;
+		display: flex;
+		align-items: flex-start;
+		font-size: 13px;
+		line-height: 18px;
+		margin-bottom: 4px;
+
+		&.required {
+			&::after {
+				content: '*';
+				color: red;
+			}
+		}
+	}
+
+	&__input {
+		flex-grow: 1;
+	}
+
+	&__textarea {
+		height: 90px;
+	}
+
+	.error {
+		color: red;
+		font-size: 12px;
+		margin-top: 6px;
+	}
+
+	&__btn {
+		button {
+			cursor: pointer;
+			appearance: none;
+			color: var(--color-second);
+			padding: 10px 16px;
+			width: 100%;
+			font-weight: 600;
+			text-align: center;
+			background: var(--color-first);
+			font-family: Mulish, sans-serif;
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	@include sm {
+		width: 360px;
+		padding: 16px;
+
+		&__title {
+			margin-bottom: 16px;
+		}
+	}
+}

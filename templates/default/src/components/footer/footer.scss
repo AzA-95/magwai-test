@@ -1,0 +1,18 @@
+.footer {
+	padding: 20px;
+	text-align: center;
+	border-top: 1px solid #000;
+
+	&__text {
+		font-size: 18px;
+	}
+
+	@include xlMin {
+		padding: px-to-vw(20);
+		border-top: px-to-vw(1) solid #000;
+
+		&__text {
+			font-size: px-to-vw(18);
+		}
+	}
+}

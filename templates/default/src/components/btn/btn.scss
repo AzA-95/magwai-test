@@ -1,0 +1,111 @@
+.btn {
+	appearance: none;
+	position: relative;
+	cursor: pointer;
+	color: var(--color-second);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 60px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px 46px 10px 30px;
+	border: none;
+	background: none;
+
+	&.loading {
+		span {
+			font-size: 0;
+			width: 40px;
+			height: 40px;
+			background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 100 100' %3E%3Cpath fill='%23171717' d='M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50'%3E%3CanimateTransform attributeName='transform' attributeType='XML' type='rotate' dur='1s' from='0 50 50' to='360 50 50' repeatCount='indefinite'%3E%3C/animateTransform%3E%3C/path%3E%3C/svg%3E")
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	span {
+		position: relative;
+		z-index: 1;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 10px;
+		width: calc(100% - 22px - 12px); // нужен чтобы не выходила рамка за пределы ширины родителя
+		height: 100%;
+		transform: skewX(-20deg);
+		background: var(--color-third);
+	}
+
+	@supports (background-clip: text) or (-webkit-background-clip: text) {
+		span {
+			background: linear-gradient(90deg, var(--color-first) 50%, var(--color-second) 50%);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		&::before {
+			background: linear-gradient(90deg, var(--color-second) 50%, var(--color-third) 50%);
+		}
+
+		& > span,
+		&:before {
+			background-size: 300%;
+			background-position: 100%;
+			transition: 1s;
+		}
+
+		@include hover {
+			&:hover > span,
+			&:hover::before {
+				background-position: 0;
+			}
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 8px;
+		height: 100%;
+		transform: skewX(-20deg);
+		background: #fff;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@include xlMin {
+		min-height: px-to-vw(60);
+		font-size: px-to-vw(12);
+		padding: px-to-vw(10) px-to-vw(46) px-to-vw(10) px-to-vw(30);
+
+		&.loading {
+			span {
+				width: px-to-vw(40);
+				height: px-to-vw(40);
+			}
+		}
+
+		&::before {
+			left: px-to-vw(10);
+			width: calc(
+				100% - #{px-to-vw(22)} - #{px-to-vw(12)}
+			); // нужен чтобы не выходила рамка за пределы ширины родителя
+		}
+
+		&::after {
+			right: px-to-vw(10);
+			width: px-to-vw(8);
+		}
+	}
+}

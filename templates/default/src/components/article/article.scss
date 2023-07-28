@@ -1,0 +1,166 @@
+.article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: var(--color-first);
+	background: var(--color-second);
+
+	&__pic {
+		position: relative;
+		display: flex;
+
+		&::before {
+			content: '';
+			width: 0;
+			height: 0;
+			padding-top: 57%;
+		}
+
+		a,
+		picture,
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	&__desc {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		gap: 20px 0;
+		padding: 25px 24px 30px;
+	}
+
+	&__category {
+		font-weight: 700;
+		font-family: Mulish, sans-serif;
+		text-transform: uppercase;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	&__name {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.6;
+		margin: 0;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	&__text {
+		color: var(--color-fifth);
+		line-height: 1.7;
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		max-height: 143px;
+		overflow: hidden;
+	}
+
+	&__author {
+		margin-top: auto;
+		color: var(--color-fifth);
+		font-size: 12px;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__btn {
+		a {
+			display: block;
+			font-weight: 600;
+			font-family: Mulish, sans-serif;
+			padding: 16px;
+			text-align: center;
+			background: var(--color-first);
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	@include xlMin {
+		&__desc {
+			gap: px-to-vw(20) 0;
+			padding: px-to-vw(25) px-to-vw(24) px-to-vw(30);
+		}
+
+		&__name {
+			font-size: px-to-vw(16);
+		}
+
+		&__text {
+			max-height: px-to-vw(143);
+		}
+
+		&__author {
+			font-size: px-to-vw(12);
+		}
+
+		&__btn {
+			a {
+				padding: px-to-vw(16);
+			}
+		}
+	}
+
+	@include mdMax {
+		&__desc {
+			gap: 0;
+		}
+
+		&__category {
+			margin-bottom: 20px;
+		}
+
+		&__name {
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			margin-bottom: 45px;
+		}
+
+		&__author {
+			margin-bottom: 25px;
+		}
+	}
+
+	@include sm {
+		&__text {
+			margin-bottom: 20px;
+		}
+	}
+}

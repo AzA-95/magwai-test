@@ -1,0 +1,18 @@
+{% from "components/btn/btn.njk" import btn %}
+
+<section class="main-banner">
+	<div class="container">
+		<div class="main-banner__content">
+			<h1 class="main-banner__title">Полет Илона Маска <br> и DOGIE COIN</h1>
+			<div class="main-banner__text">В прошлый четверг все офигели от полета DOGIE COIN на марс.</div>
+			<div class="main-banner__btn">
+				{{
+					btn({
+						text: 'Оставить заявку',
+						hasPopup: true
+					})
+				}}
+			</div>
+		</div>
+	</div>
+</section>

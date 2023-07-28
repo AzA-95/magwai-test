@@ -1,0 +1,66 @@
+.menu {
+	&__list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		margin-left: 42px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		@include hover {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	@include xlMin {
+		&__item {
+			margin-left: px-to-vw(42);
+		}
+	}
+
+	@include lg {
+		&__item {
+			margin-left: 30px;
+		}
+	}
+
+	@include mdMax {
+		&__list {
+			gap: 15px;
+			flex-direction: column;
+		}
+
+		&__item {
+			margin: 0;
+		}
+
+		&__link {
+			font-size: 36px;
+			font-weight: 700;
+		}
+
+		@supports (text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000) {
+			&__link {
+				color: transparent;
+				-webkit-text-stroke: 1px var(--color-sixth);
+				text-stroke: 1px var(--color-sixth);
+			}
+		}
+	}
+
+	@include sm {
+		&__link {
+			font-size: 20px;
+		}
+	}
+}

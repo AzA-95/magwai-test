@@ -1,0 +1,47 @@
+.mobile-menu {
+	display: none;
+	--header-height: 110px;
+
+	@include mdMax {
+		display: block;
+		overflow: auto;
+		position: absolute;
+		top: var(--header-height);
+		left: 0;
+		z-index: 5;
+		width: 100%;
+		height: calc(100vh - var(--header-height)); // fallback
+		height: calc((var(--vh, 1vh) * 100) - var(--header-height));
+		padding: 60px 0;
+		background: var(--color-fourth);
+		transform: translateX(-100%);
+		transition: transform 0.3s ease-in;
+
+		&__phone-btn,
+		&__call-me {
+			display: none;
+		}
+
+		&.active {
+			transform: translateX(0);
+		}
+	}
+
+	@include sm {
+		--header-height: 71px;
+		padding: 0 0 20px;
+
+		&__menu {
+			margin-bottom: 50px;
+		}
+
+		&__phone-btn,
+		&__call-me {
+			display: block;
+		}
+
+		&__phone-btn {
+			margin-bottom: 6px;
+		}
+	}
+}

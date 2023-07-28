@@ -1,0 +1,20 @@
+{% from "components/btn/btn.njk" import btn %}
+
+<div class="mobile-menu js-mobile-menu">
+	<div class="container">
+		<div class="mobile-menu__menu">
+			{% include "components/menu/menu.njk" %}
+		</div>
+		<div class="mobile-menu__phone-btn">
+			{% include "components/phone-btn/phone-btn.njk" %}
+		</div>
+		<div class="mobile-menu__call-me">
+			{{
+				btn({
+					text: 'Оставить заявку',
+					hasPopup: true
+				})
+			}}
+		</div>
+	</div>
+</div>
