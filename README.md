@@ -3,6 +3,8 @@
 Верстка сайта
 
 Верстка адаптирована под большие экраны
+<br>
+Демо сайта тут https://aza-95.github.io/magwai-test/templates/default/dist/main.html
 
 Проект запускался на Node 16.16.0 и Npm 8.11.0
 
